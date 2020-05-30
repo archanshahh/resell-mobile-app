@@ -1,33 +1,53 @@
 import React from "react";
-import { View, StyleSheet, Image, ImageBackground, Text } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  Text,
+  Button,
+} from "react-native";
+import colors from "../config/colors";
 
 function WelcomeScreen(props) {
   return (
     <ImageBackground
-      style={styles.backgrond}
+      style={styles.background}
       source={require("../assets/background.jpg")}
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-        <Text>Sell what you don't need</Text>
       </View>
+      <Text style={styles.text}>Sell what you don't need</Text>
 
-      <View style={styles.loginButton} />
-      <View style={styles.registerButton} />
+      <View style={styles.loginButton}>
+        <Button title="LOGIN" color="white" />
+      </View>
+      <View style={styles.registerButton}>
+        <Button title="REGISTER" color="white" />
+      </View>
     </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  backgrond: {
+  text: {
+    position: "absolute",
+    bottom: 600,
+    fontWeight: "bold",
+    fontSize: 20,
+  },
+  background: {
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
   },
   loginButton: {
-    backgroundColor: "tomato",
+    backgroundColor: colors.primary,
     width: "100%",
-    height: 70,
+    height: 50,
+    margin: 10,
+    borderRadius: 20,
   },
   logo: {
     height: 100,
@@ -39,46 +59,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   registerButton: {
-    backgroundColor: "teal",
+    backgroundColor: colors.secondary,
     width: "100%",
-    height: 70,
+    height: 50,
+    marginBottom: 10,
+    borderRadius: 20,
   },
 });
 
 export default WelcomeScreen;
-/* <View
-        style={{
-          flex: 1,
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <ImageBackground
-          style={{
-            flex: 8,
-            width: "100%",
-          }}
-          source={require("../assets/background.jpg")}
-        >
-          <Image
-            style={{
-              height: 70,
-              width: 70,
-              top: 100,
-              alignSelf: "center",
-            }}
-            source={require("../assets/logo-red.png")}
-          />
-          
-        </ImageBackground>
-        
-        <View
-          style={{
-            backgroundColor: "gold",
-            width: "100%",
-            height: 100,
-            flex: 1,
-          }}
-        />
-      </View> */
