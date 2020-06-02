@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import RegisterScreen from "./app/screens/RegisterScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
-  return <RegisterScreen />;
+  return <MessagesScreen />;
 }

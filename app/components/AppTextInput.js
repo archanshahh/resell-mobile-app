@@ -15,6 +15,7 @@ function AppTextInput({ icon, ...otherProps }) {
         />
       )}
       <TextInput
+        placeholderTextColor={defaultStyles.colors.medium}
         style={[defaultStyles.text, styles.textInput]}
         {...otherProps}
       />

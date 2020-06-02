@@ -24,6 +24,7 @@ function RegisterScreen(props) {
           name="name"
           placeholder="Name"
           autoCorrect={false}
+          textContentType="username"
         />
         <AppFormField
           icon="email"
