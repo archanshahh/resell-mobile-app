@@ -9,6 +9,9 @@ import OfflineNoticeBar from "./app/components/OfflineNoticeBar";
 import AuthContext from "./app/auth/context";
 import authStorage from "./app/auth/storage";
 import { navigationRef } from "./app/navigation/rootNavigation";
+import logger from "./app/utilities/logger";
+
+logger.start();
 
 export default function App() {
   const [user, setUser] = useState();
