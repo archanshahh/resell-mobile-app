@@ -6,4 +6,4 @@ Resell
 Screenshots
 ===
 <img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Welcome.png"/> <img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Listings.png"/> <img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Add-listing.png"/> 
-<img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Listing-detail.png"/> <img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Account.png"/> 
+<img height="550" width="250" src="https://github.com/archanshahh/resell-mobile-app/blob/master/screenshots/Listing-detail.png"/> 
