@@ -1,7 +1,7 @@
 Resell
 ===
 - A mobile app built for ios and android for reselling products that you don't need anymore!
-- Technologies Used: JavaScript, React Native, Expo, Hooks
+- Technologies Used: JavaScript, React Native, Expo, Node.js, JWT, Hooks
 
 Screenshots
 ===
